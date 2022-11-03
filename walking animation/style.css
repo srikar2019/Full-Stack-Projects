@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(193, 72, 72);
+  }
+  body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+  .animation_outer {
+      display: flex;
+      align-items: center;
+  }
+  .animation {
+      width: 184px;
+      height: 325px;
+      background-image: url(texture.png);
+      margin: 0 auto;
+      animation: walk 1s steps(8) infinite;
+  }
+  @keyframes walk {
+      from {
+          background-position: 0px;
+      }
+      to {
+          background-position: -1470px;
+      }
+  }
+  .animation:hover {
+      animation: unset;
+  }
